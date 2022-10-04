@@ -2,9 +2,15 @@ import React from "react";
 import "./NavBar.scss";
 
 const NavBar = ({ active, setActive, setSelected }) => {
-  const handleClick = (val)=>{
-    setSelected(val)
-    setActive(false)
+  let [language, setLanguage] = React.useState("EN");
+  const handleClick = (val) => {
+    setSelected(val);
+    setActive(false);
+  };
+  const handleLanguageClick = (val)=>{
+    if(language === val)
+    return;
+    setLanguage(val)
   }
   return (
     <div className={"navbar" + (active ? " active-navbar" : "")}>
@@ -38,12 +44,19 @@ const NavBar = ({ active, setActive, setSelected }) => {
         )}
       </div>
       <div className="navbar-items">
-        <span onClick={()=>handleClick("Home")}>Home</span>
-        <span onClick={()=>handleClick("Experience")}>Experience</span>
-        <span onClick={()=>handleClick("History")}>History</span>
-        <span onClick={()=>handleClick("Contact")}>Contact</span>
+        <span onClick={() => handleClick("Home")}>Home</span>
+        <span onClick={() => handleClick("Experience")}>Experience</span>
+        <span onClick={() => handleClick("History")}>History</span>
+        <span onClick={() => handleClick("Contact")}>Contact</span>
       </div>
-      <div className="navbar-languages"></div>
+      <div className="navbar-languages">
+        <div className={language==="FR" ? "active-language":""} onClick={()=>handleLanguageClick("FR")}>
+          <span>FR</span>
+        </div>
+        <div className={language==="EN" ? "active-language":""} onClick={()=>handleLanguageClick("EN")}>
+          <span>EN</span>
+        </div>
+      </div>
     </div>
   );
 };
