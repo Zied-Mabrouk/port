@@ -40,8 +40,8 @@ const NavBar = ({ active, setActive, setSelected }) => {
       <div className="navbar-items">
         <span onClick={()=>handleClick("Home")}>Home</span>
         <span onClick={()=>handleClick("Experience")}>Experience</span>
-        <span>Home</span>
-        <span>Home</span>
+        <span onClick={()=>handleClick("History")}>History</span>
+        <span onClick={()=>handleClick("Contact")}>Contact</span>
       </div>
       <div className="navbar-languages"></div>
     </div>

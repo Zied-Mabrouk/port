@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.scss"
+import Contact from "./components/modules/Contact/Contact";
 import Experience from "./components/modules/Experience/Experience";
+import History from "./components/modules/History/History";
 import Home from "./components/modules/Home/Home";
 import NavBar from "./components/modules/NavBar/NavBar";
 import SideBar from "./components/modules/SideBar/SideBar";
@@ -18,6 +20,12 @@ function App() {
         break;
       case "Experience":
         setMain(<Experience />);
+        break;
+      case "History":
+        setMain(<History />);
+        break;
+      case "Contact":
+        setMain(<Contact />);
         break;
 
       default:

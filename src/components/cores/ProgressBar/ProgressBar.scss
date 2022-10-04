@@ -28,10 +28,17 @@
       height: 50px;
       stroke: #191923;
     }
-    path:last-child {
+    path:last-child{
+
       stroke: var(--main-color);
+    }
+    .path-80 {
       stroke-dasharray: 292.273, 292.273;
-      stroke-dashoffset: 87.682;
+      stroke-dashoffset: 60.682;
+    }
+    .path-90 {
+      stroke-dasharray: 292.273, 292.273;
+      stroke-dashoffset: 30.682;
     }
   }
   .progressbar-title{
