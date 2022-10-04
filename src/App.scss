@@ -18,19 +18,19 @@
 }
 .app {
   background-color: var(--bg-color);
+  padding: 16px;
 }
 .container {
-  padding: 16px;
   max-width: 1440px;
-  width: min(1440px, calc(100vw));
+  width: min(1440px, calc(100vw - 32px));
   margin-inline: auto;
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
-body{
-  
+body {
   overflow-x: hidden;
 }
-
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -48,4 +48,23 @@ body{
 
 html {
   scroll-behavior: smooth;
+}
+.page-content {
+  width: calc(min(100vw,1440px) - (290px +  80px));
+  padding: 0 32px;
+  transition: all 1s ease-in-out;
+}
+.page-content-active{
+  transform: translateX(-150px);
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(25, 25, 35,0.4);
+  }
 }

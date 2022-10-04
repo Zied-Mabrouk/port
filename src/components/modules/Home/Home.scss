@@ -1,6 +1,5 @@
 .home{
-    width: calc(100vw - (290px + 32px + 230px ));
-    padding: 0 30px;
+    width: 100%;
     .home-banner{
         height: 400px;
         background-image: url("../../../../public/img/bg.jpg");
@@ -21,6 +20,7 @@
             h1{
                 font-size: 46px;
                 font-weight: 800;
+                text-shadow: 0 0 4px black;
             }
         }
     }

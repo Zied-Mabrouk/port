@@ -1,0 +1,20 @@
+.navbar {
+  height: calc(100vh - 32px);
+  max-height: calc(100vh - 32px);
+  width: 230px;
+  min-width: 230px;
+  margin-left: auto;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: -150px;
+  background-color: var(--bg-color-light);
+  .navbar-header{
+    height: 70px;
+    background-color: var(--bg-color-lighter);
+    width: 100%;
+  }
+}
+.active-navbar {
+  transform: translateX(-150px);
+}
