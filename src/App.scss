@@ -52,7 +52,7 @@ html {
 .page-content {
   width: calc(min(100vw - 402px ,1440px - 370px ) );
   padding: 0 32px;
-  transition: all 1s ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .page-content-active{
   transform: translateX(-150px);
