@@ -32,7 +32,7 @@ const SideBar = () => {
         <ProgressBar percentage={90} title={"arabic"} />
         <ProgressBar percentage={80} title={"english"} />
       </div>
-      <div className="sidebar-skills">
+      <div className="sidebar-skills" >
         <Skill level={'Advanced'} title={"Java"}  />
         <Skill level={"Advanced"} title={"HTML"}  />
         <Skill level={"Advanced"} title={"CSS"}  />
