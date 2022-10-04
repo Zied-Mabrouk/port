@@ -52,14 +52,26 @@ const SideBar = () => {
         <Skill level={"Intermediate"} title={"GitHub"} />
       </div>
       <div className="sidebar-contact">
-        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/zied.mabrouk.1042/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.facebook.com/zied.mabrouk.1042/"
+        >
           <img src="./img/icons/fb.svg" alt="" />
         </a>
-      
-        <a target="_blank" rel="noreferrer" href="https://github.com/Zied-Mabrouk">
+
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Zied-Mabrouk"
+        >
           <img src="./img/icons/github.svg" alt="" />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/zied-mabrouk-6401bb201/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/zied-mabrouk-6401bb201/"
+        >
           <img src="./img/icons/linkedin.svg" alt="" />
         </a>
       </div>

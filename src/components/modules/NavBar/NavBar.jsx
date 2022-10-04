@@ -1,7 +1,11 @@
 import React from "react";
 import "./NavBar.scss";
 
-const NavBar = ({ active, setActive }) => {
+const NavBar = ({ active, setActive, setSelected }) => {
+  const handleClick = (val)=>{
+    setSelected(val)
+    setActive(false)
+  }
   return (
     <div className={"navbar" + (active ? " active-navbar" : "")}>
       <div className="navbar-header">
@@ -33,6 +37,13 @@ const NavBar = ({ active, setActive }) => {
           </svg>
         )}
       </div>
+      <div className="navbar-items">
+        <span onClick={()=>handleClick("Home")}>Home</span>
+        <span onClick={()=>handleClick("Experience")}>Experience</span>
+        <span>Home</span>
+        <span>Home</span>
+      </div>
+      <div className="navbar-languages"></div>
     </div>
   );
 };

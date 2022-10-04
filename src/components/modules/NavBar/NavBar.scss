@@ -26,10 +26,49 @@
       }
     }
   }
+  .navbar-items{
+    height: calc(100vh - 222px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    span{
+      transition: all ease-in-out;
+      transform: translateX(150px);
+      font-size: 14px;
+      color: var(--light-grey-font);
+      cursor: pointer;
+    }
+    span:nth-child(1)
+    {
+      transition-duration: 1000ms;
+    }
+    span:nth-child(2)
+    {
+      transition-duration: 1100ms;
+    }
+    span:nth-child(3)
+    {
+      transition-duration: 1200ms;
+    }
+    span:nth-child(4)
+    {
+      transition-duration: 1300ms;
+    }
+  }
+  .navbar-languages{
+    height: 120px;
+    background: var(--bg-color-lighter);
+  }
 }
 .active-navbar {
   transform: translateX(-150px);
   .navbar-header{
     width: 230px;
+  }
+  .navbar-items{
+    span{
+      transform: translateX(0);
+    }    
   }
 }
