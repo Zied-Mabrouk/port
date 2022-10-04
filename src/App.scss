@@ -50,7 +50,7 @@ html {
   scroll-behavior: smooth;
 }
 .page-content {
-  width: calc(min(100vw,1440px) - (290px +  80px));
+  width: calc(min(100vw - 402px ,1440px - 370px ) );
   padding: 0 32px;
   transition: all 1s ease-in-out;
 }
