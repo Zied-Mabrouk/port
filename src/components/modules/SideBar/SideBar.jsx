@@ -1,5 +1,6 @@
 import React from "react";
 import ProgressBar from "../../cores/ProgressBar/ProgressBar";
+import Skill from "../../cores/Skill/Skill";
 import "./SideBar.scss";
 
 const SideBar = () => {
@@ -14,7 +15,6 @@ const SideBar = () => {
         </p>
       </div>
       <div className="sidebar-infos">
-
         <div>
           <span>Residence</span>
           <span>City</span>
@@ -26,7 +26,6 @@ const SideBar = () => {
           <span>Ariana</span>
           <span>22</span>
         </div>
-
       </div>
       <div className="seperator"></div>
       <div className="sidebar-languages">
@@ -35,6 +34,13 @@ const SideBar = () => {
         <ProgressBar percentage={80} title={"english"} />
       </div>
       <div className="seperator"></div>
+      <div className="sidebar-skills">
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+        <Skill />
+      </div>
     </div>
   );
 };

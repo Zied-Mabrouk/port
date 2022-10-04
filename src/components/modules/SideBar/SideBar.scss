@@ -62,4 +62,9 @@
     display: flex;
     justify-content: space-around;
   }
+  .sidebar-skills{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 }
