@@ -1,10 +1,14 @@
-.btn
-{
-    padding:12px 35px;
-    background-color: var(--main-color);
-    border: none;
-    color: var(--bg-color-light);
-    text-transform: uppercase;
-    font-weight: 500;
-    width: fit-content;
+.btn {
+  padding: 12px 36px;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--bg-color-light);
+  text-transform: uppercase;
+  font-weight: 500;
+  width: fit-content;
+  cursor: pointer;
+  transition: transform 500ms ease-in-out;
+  &:hover{
+    transform: translateY(-10px);
+  }
 }

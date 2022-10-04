@@ -1,6 +1,6 @@
 .sidebar {
-  height: calc( 100vh - 32px);
-  max-height: calc( 100vh - 32px);
+  height: calc( 100vh - 32px );
+  max-height: calc( 100vh - 32px );
   overflow-y: scroll;
   width: 300px;
   background-color: var(--bg-color-light);
@@ -60,19 +60,61 @@
       }
     }
   }
+  .seperator{
+
+    border-bottom: 1px solid rgb(100, 100, 102,0.3);
+    
+    padding: 32px 0;
+    margin: 0 32px ;
+  }
  
   .sidebar-languages {
-    border-bottom: 1px solid rgb(100, 100, 102,0.3);
-    padding: 32px 0;
-    margin : 0 32px;
     display: flex;
     justify-content: space-around;
   }
-  .sidebar-skills {
-    margin: 32px;
+  .sidebar-hard-skills {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 8px;
+    &::after{
+      content: "Hard Skills";
+      position: absolute;
+      text-transform: uppercase;
+      color: var(--light-grey-font);
+      letter-spacing: 2px;
+      top: 32px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      transform: rotate(90deg);
+      height: 300px;
+      opacity: 0.5;
+      
+    }
+  }
+  .sidebar-other-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    position: relative;
+    &::after{
+      content: "Other Skills";
+      position: absolute;
+      text-transform: uppercase;
+      opacity: 0.5;
+      color: var(--light-grey-font);
+      letter-spacing: 2px;
+      top: 32px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      transform: rotate(90deg);
+      height: 300px;
+      
+    }
   }
   &::-webkit-scrollbar {
     width: 0;

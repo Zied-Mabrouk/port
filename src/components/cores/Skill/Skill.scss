@@ -18,6 +18,9 @@
     font-size: 11px;
     text-align: center;
     font-weight: 400;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   p {
     font-size: 10px;

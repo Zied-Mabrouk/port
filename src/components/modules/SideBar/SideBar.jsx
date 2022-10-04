@@ -27,23 +27,29 @@ const SideBar = () => {
           <span>22</span>
         </div>
       </div>
-      <div className="sidebar-languages">
+      <div className="sidebar-languages seperator">
         <ProgressBar percentage={100} title={"french"} />
         <ProgressBar percentage={90} title={"arabic"} />
         <ProgressBar percentage={80} title={"english"} />
       </div>
-      <div className="sidebar-skills" >
-        <Skill level={'Advanced'} title={"Java"}  />
-        <Skill level={"Advanced"} title={"HTML"}  />
-        <Skill level={"Advanced"} title={"CSS"}  />
+      <div className="sidebar-hard-skills seperator">
+        <Skill level={"Advanced"} title={"Java"} />
+        <Skill level={"Advanced"} title={"HTML"} />
+        <Skill level={"Advanced"} title={"CSS"} />
         <Skill level={"Advanced"} title={"Javascript"} />
-        <Skill level={"Advanced"} title={"PHP"}  />
-        <Skill level={"Advanced"} title={"SQL"}  />
-        <Skill level={"Intermediate"} title={"C++"}  />
-        <Skill level={"Intermediate"} title={"Symfony"}  />
-        <Skill level={"Intermediate"} title={"Python"}  />
-        <Skill level={"Advanced"} title={"React"}  />
-        <Skill level={"Basic"} title={"Angular"}  />
+        <Skill level={"Advanced"} title={"PHP"} />
+        <Skill level={"Advanced"} title={"SQL"} />
+        <Skill level={"Intermediate"} title={"C++"} />
+        <Skill level={"Intermediate"} title={"Symfony"} />
+        <Skill level={"Intermediate"} title={"Python"} />
+        <Skill level={"Advanced"} title={"React"} />
+        <Skill level={"Basic"} title={"Angular"} />
+      </div>
+      <div className="sidebar-other-skills seperator">
+        <Skill level={"Advanced"} title={"Sass"} />
+        <Skill level={"Advanced"} title={"Project Management"} />
+        <Skill level={"Intermediate"} title={"Scrum"} />
+        <Skill level={"Intermediate"} title={"GitHub"} />
       </div>
     </div>
   );
