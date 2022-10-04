@@ -1,5 +1,7 @@
 .sidebar {
   height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
   width: 300px;
   background-color: var(--bg-color-light);
   display: flex;
@@ -10,6 +12,7 @@
     align-items: center;
     justify-content: center;
     height: 260px;
+    min-height: 260px;
     gap: 8px;
     background: var(--bg-color-lighter);
     img {
@@ -30,7 +33,9 @@
   .sidebar-infos {
     display: flex;
     justify-content: space-between;
-    padding: 32px;
+    padding: 32px 0;
+    margin : 0 32px;
+    border-bottom: 1px solid rgb(100, 100, 102,0.3);
     > div {
       span {
         display: block;
@@ -50,21 +55,25 @@
       }
     }
   }
-  .seperator{
-    width: 80%;
-    margin-inline: auto;
-    height: 1px;
-    opacity: 0.3;
-    background: #646466;
-  }
-  .sidebar-languages{
-    padding: 32px;
+ 
+  .sidebar-languages {
+    border-bottom: 1px solid rgb(100, 100, 102,0.3);
+    padding: 32px 0;
+    margin : 0 32px;
     display: flex;
     justify-content: space-around;
   }
-  .sidebar-skills{
+  .sidebar-skills {
+    margin: 32px;
     display: flex;
-    gap: 8px;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 8px;
   }
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+ 
 }
+
+ 
