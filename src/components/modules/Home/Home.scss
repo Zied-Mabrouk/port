@@ -1,5 +1,5 @@
 .home{
-    width: 1000px;
+    width: calc(100vw - (290px + 32px + 230px ));
     padding: 0 30px;
     .home-banner{
         height: 400px;

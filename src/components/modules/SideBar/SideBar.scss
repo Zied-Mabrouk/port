@@ -1,15 +1,17 @@
 .sidebar {
-  height: calc( 100vh - 32px );
-  max-height: calc( 100vh - 32px );
+  height: calc(100vh - 32px);
+  max-height: calc(100vh - 32px);
   overflow-y: scroll;
-  width: 300px;
+  overflow-x: hidden;
+  width: 290px;
+  min-width: 290px;
   background-color: var(--bg-color-light);
   display: flex;
   flex-direction: column;
   position: relative;
   .sidebar-avatar {
     position: fixed;
-    width: 300px;
+    width: 290px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -19,6 +21,9 @@
     min-height: 260px;
     gap: 8px;
     background: var(--bg-color-lighter);
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     img {
       width: 100px;
     }
@@ -38,9 +43,9 @@
     display: flex;
     justify-content: space-between;
     padding: 32px 0 32px 0;
-    margin : 260px 32px 0 32px;
+    margin: 260px 32px 0 32px;
 
-    border-bottom: 1px solid rgb(100, 100, 102,0.3);
+    border-bottom: 1px solid rgb(100, 100, 102, 0.3);
     > div {
       span {
         display: block;
@@ -60,14 +65,13 @@
       }
     }
   }
-  .seperator{
+  .seperator {
+    border-bottom: 1px solid rgb(100, 100, 102, 0.3);
 
-    border-bottom: 1px solid rgb(100, 100, 102,0.3);
-    
     padding: 32px 0;
-    margin: 0 32px ;
+    margin: 0 32px;
   }
- 
+
   .sidebar-languages {
     display: flex;
     justify-content: space-around;
@@ -76,50 +80,82 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    gap: 8px;
-    &::after{
+    gap: 9px;
+    .skill:last-of-type {
+      display: flex;
+      justify-self: flex-end;
+    }
+    &::after {
       content: "Hard Skills";
       position: absolute;
       text-transform: uppercase;
       color: var(--light-grey-font);
       letter-spacing: 2px;
-      top: 32px;
-      left: 0;
+      top: 88px;
+      left: -2px;
       width: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       transform: rotate(90deg);
       height: 300px;
       opacity: 0.5;
-      
     }
   }
   .sidebar-other-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
     position: relative;
-    &::after{
+    gap: 9px;
+    border-bottom: none;
+    &::after {
       content: "Other Skills";
       position: absolute;
       text-transform: uppercase;
       opacity: 0.5;
       color: var(--light-grey-font);
       letter-spacing: 2px;
-      top: 32px;
-      left: 0;
+      top: 50px;
+      left: -2px;
       width: 100%;
       display: flex;
       justify-content: flex-start;
       transform: rotate(90deg);
       height: 300px;
-      
     }
   }
   &::-webkit-scrollbar {
     width: 0;
   }
- 
+  .sidebar-contact {
+    background: linear-gradient(
+      159deg,
+      rgba(37, 37, 50, 0.98) 0%,
+      rgba(35, 35, 45, 0.98) 100%
+    );
+    width: 290px;
+    z-index: 1;
+    position: fixed;
+    bottom: 16px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline: 32px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    a {
+      background-color: rgb(255, 255, 255, 0.1);
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      opacity: .7;
+      &:hover{
+        opacity: 1;
+      }
+      img {
+        padding: 5px;
+        height: 100%;
+      }
+    }
+  }
 }
-
- 

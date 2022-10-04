@@ -20,9 +20,9 @@
   background-color: var(--bg-color);
 }
 .container {
-  padding: 16px 0;
+  padding: 16px;
   max-width: 1440px;
-  width: fit-content;
+  width: min(1440px, calc(100vw));
   margin-inline: auto;
   display: flex;
 }
