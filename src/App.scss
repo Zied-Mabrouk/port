@@ -13,22 +13,22 @@
     rgba(37, 37, 50, 0.98) 0%,
     rgba(35, 35, 45, 0.98) 100%
   );
-  --main-color: #cd8808;
+  --main-color: #ffc107;
   --light-grey-font: #8c8c8e;
 }
 .app {
-  padding: 16px 0;
   background-color: var(--bg-color);
 }
-body{
-  
-  overflow: hidden;
-}
 .container {
+  padding: 16px 0;
   max-width: 1440px;
   width: fit-content;
   margin-inline: auto;
   display: flex;
+}
+body{
+  
+  overflow-x: hidden;
 }
 
 
@@ -45,7 +45,6 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-/* Track */
 
 html {
   scroll-behavior: smooth;

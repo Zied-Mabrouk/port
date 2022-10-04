@@ -1,6 +1,6 @@
 .sidebar {
-  height: 100vh;
-  max-height: 100vh;
+  height: calc( 100vh - 32px);
+  max-height: calc( 100vh - 32px);
   overflow-y: scroll;
   width: 300px;
   background-color: var(--bg-color-light);
@@ -71,7 +71,6 @@
   .sidebar-skills {
     margin: 32px;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 8px;
   }
