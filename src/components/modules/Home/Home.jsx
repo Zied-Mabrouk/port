@@ -13,7 +13,7 @@ const Home = () => {
           <h1>
             {home.bannerTitle}
           </h1>
-          <Button title={"Explore Now"} />
+          <Button title={home.button} />
         </div>
       </div>
     </div>

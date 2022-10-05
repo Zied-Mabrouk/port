@@ -3,7 +3,8 @@
     "navItems":["Home","Experience","History","Contact"],
     "type":"EN",
     "home":{
-        "bannerTitle":"Discover my Amazing Art Space !"
+        "bannerTitle":"Discover my Amazing Art Space !",
+        "button":"Explore now"
     },
     "sideBar":{
         "avatar":{
@@ -28,6 +29,7 @@
                 "percentage":80
             }
         ],
+        "hardSkillsLabel":"hard skills",
         "hardSkills":[
             {
                 "label":"React",
@@ -74,6 +76,7 @@
                 "level":"Basic"
             }
         ],
+        "otherSkillsLabel":"other skills",
         "otherSkills":[
             {"label":"Sass", "level":"Advanced"},
             {"label":"Project Management", "level":"Advanced"},
@@ -86,7 +89,8 @@
     "navItems":["Accueil","Experience","Histoire","Contact"],
     "type":"FR",
     "home":{
-        "bannerTitle":"Découvrez ma passion de l'art de l'espace"
+        "bannerTitle":"Découvrez ma passion de l'art de l'espace",
+        "button":"Explorez maintenant"
     },
     "sideBar":{
         "avatar":{
@@ -111,6 +115,7 @@
                 "percentage":80
             }
         ],
+        "hardSkillsLabel":"compétences techniques",
         "hardSkills":[
             {
                 "label":"React",
@@ -157,6 +162,7 @@
                 "level":"Basique"
             }
         ],
+        "otherSkillsLabel":"autres compétences",
         "otherSkills":[
             {"label":"Sass", "level":"Avancé"},
             {"label":"Project Management", "level":"Avancé"},

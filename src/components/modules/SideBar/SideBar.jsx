@@ -38,11 +38,15 @@ const SideBar = () => {
         ))}
       </div>
       <div className="sidebar-hard-skills seperator">
+        <span className="floater">
+          {sideBar.hardSkillsLabel}
+        </span>
         {sideBar.hardSkills.map((skill, key) => (
           <Skill level={skill.level} title={skill.label} />
         ))}
       </div>
       <div className="sidebar-other-skills seperator">
+        <span className="floater">{sideBar.otherSkillsLabel}</span>
         {sideBar.otherSkills.map((skill, key) => (
           <Skill level={skill.level} title={skill.label} />
         ))}
