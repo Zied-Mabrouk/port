@@ -19,14 +19,14 @@ const SideBar = () => {
       <div className="sidebar-infos">
         <div>
           {sideBar.infos.map((info, key) => (
-            <span key={key}> {info} </span>
+            <span key={key}> {info.label} </span>
           ))}
         </div>
 
         <div>
-          <span>Tunisia</span>
-          <span>Ariana</span>
-          <span>22</span>
+          {sideBar.infos.map((info, key) => (
+            <span key={key}> {info.content} </span>
+          ))}
         </div>
       </div>
       <div className="sidebar-languages seperator">

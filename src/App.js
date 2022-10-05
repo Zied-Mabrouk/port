@@ -34,7 +34,7 @@ function App() {
         setMain(<Home />);
         break;
     }
-  }, [selected]);
+  }, [selected,language]);
   return (
     <LanguageContext.Provider value={[language,setLanguage]}>
       <div className="app">

@@ -9,7 +9,11 @@
         "avatar":{
             "roles":["Web Developer","UI/UX Designer"]
         },
-        "infos":["Residence","City","Age"],
+        "infos":[
+            {"label":"Residence","content":"Tunisia"},
+            {"label":"City","content":"Ariana"},
+            {"label":"Age","content":22}
+        ],
         "languages":[
             {
                 "label":"French",
@@ -88,7 +92,11 @@
         "avatar":{
             "roles":["Développeur Web","UI/UX Designer"]
         },
-        "infos":["Résidence","Cité","Age"],
+        "infos":[
+            {"label":"Résidence","content":"Tunisie"},
+            {"label":"Cité","content":"Ariana"},
+            {"label":"Age","content":22}
+        ],
         "languages":[
             {
                 "label":"Français",
