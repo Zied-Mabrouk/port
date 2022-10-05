@@ -2,23 +2,25 @@ import React from "react";
 import ProgressBar from "../../cores/ProgressBar/ProgressBar";
 import Skill from "../../cores/Skill/Skill";
 import "./SideBar.scss";
+import { LanguageContext } from "../../../App";
 
 const SideBar = () => {
+  let [language] = React.useContext(LanguageContext);
+  const sideBar = language.sideBar;
   return (
     <div className="sidebar">
       <div className="sidebar-avatar">
         <img src="./img/me.png" alt="" />
         <h1>Zied Mabrouk</h1>
-        <p>
-          Web Developer <br />
-          UI/UX Designer
-        </p>
+        {sideBar.avatar.roles.map((role, key) => (
+          <p key={key}>{role}</p>
+        ))}
       </div>
       <div className="sidebar-infos">
         <div>
-          <span>Residence</span>
-          <span>City</span>
-          <span>Age</span>
+          {sideBar.infos.map((info, key) => (
+            <span key={key}> {info} </span>
+          ))}
         </div>
 
         <div>
@@ -28,28 +30,22 @@ const SideBar = () => {
         </div>
       </div>
       <div className="sidebar-languages seperator">
-        <ProgressBar percentage={100} title={"french"} />
-        <ProgressBar percentage={90} title={"arabic"} />
-        <ProgressBar percentage={80} title={"english"} />
+        {sideBar.languages.map((language, key) => (
+          <ProgressBar
+            percentage={language.percentage}
+            title={language.label}
+          />
+        ))}
       </div>
       <div className="sidebar-hard-skills seperator">
-        <Skill level={"Advanced"} title={"Java"} />
-        <Skill level={"Advanced"} title={"HTML"} />
-        <Skill level={"Advanced"} title={"CSS"} />
-        <Skill level={"Advanced"} title={"Javascript"} />
-        <Skill level={"Advanced"} title={"PHP"} />
-        <Skill level={"Advanced"} title={"SQL"} />
-        <Skill level={"Intermediate"} title={"C++"} />
-        <Skill level={"Intermediate"} title={"Symfony"} />
-        <Skill level={"Intermediate"} title={"Python"} />
-        <Skill level={"Advanced"} title={"React"} />
-        <Skill level={"Basic"} title={"Angular"} />
+        {sideBar.hardSkills.map((skill, key) => (
+          <Skill level={skill.level} title={skill.label} />
+        ))}
       </div>
       <div className="sidebar-other-skills seperator">
-        <Skill level={"Advanced"} title={"Sass"} />
-        <Skill level={"Advanced"} title={"Project Management"} />
-        <Skill level={"Intermediate"} title={"Scrum"} />
-        <Skill level={"Intermediate"} title={"GitHub"} />
+        {sideBar.otherSkills.map((skill, key) => (
+          <Skill level={skill.level} title={skill.label} />
+        ))}
       </div>
       <div className="sidebar-contact">
         <a

@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./NavBar.scss";
+import Languages from "../../../languages.json";
+import { LanguageContext } from "../../../App";
 
 const NavBar = ({ active, setActive, setSelected }) => {
-  let [language, setLanguage] = React.useState("EN");
   const handleClick = (val) => {
     setSelected(val);
     setActive(false);
   };
-  const handleLanguageClick = (val)=>{
-    if(language === val)
-    return;
-    setLanguage(val)
-  }
+  const handleLanguageClick = (val) => {
+    if (language === val) return;
+    setLanguage(Languages[val]);
+  };
+
+  const [language, setLanguage] = useContext(LanguageContext);
+  const navItems = language.navItems;
   return (
     <div className={"navbar" + (active ? " active-navbar" : "")}>
       <div className="navbar-header">
@@ -44,16 +47,24 @@ const NavBar = ({ active, setActive, setSelected }) => {
         )}
       </div>
       <div className="navbar-items">
-        <span onClick={() => handleClick("Home")}>Home</span>
-        <span onClick={() => handleClick("Experience")}>Experience</span>
-        <span onClick={() => handleClick("History")}>History</span>
-        <span onClick={() => handleClick("Contact")}>Contact</span>
+        {navItems &&
+          navItems.map((item, key) => (
+            <span key={key} onClick={() => handleClick(item)}>
+              {item}
+            </span>
+          ))}
       </div>
       <div className="navbar-languages">
-        <div className={language==="FR" ? "active-language":""} onClick={()=>handleLanguageClick("FR")}>
+        <div
+          className={language.type === "FR" ? "active-language" : ""}
+          onClick={() => handleLanguageClick("FR")}
+        >
           <span>FR</span>
         </div>
-        <div className={language==="EN" ? "active-language":""} onClick={()=>handleLanguageClick("EN")}>
+        <div
+          className={language.type === "EN" ? "active-language" : ""}
+          onClick={() => handleLanguageClick("EN")}
+        >
           <span>EN</span>
         </div>
       </div>

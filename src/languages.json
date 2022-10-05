@@ -1,0 +1,160 @@
+{
+  "EN": {
+    "navItems":["Home","Experience","History","Contact"],
+    "type":"EN",
+    "home":{
+        "bannerTitle":"Discover my Amazing Art Space !"
+    },
+    "sideBar":{
+        "avatar":{
+            "roles":["Web Developer","UI/UX Designer"]
+        },
+        "infos":["Residence","City","Age"],
+        "languages":[
+            {
+                "label":"French",
+                "percentage":100
+            },
+            {
+                "label":"Arabic",
+                "percentage":90
+            },
+            {
+                "label":"English",
+                "percentage":80
+            }
+        ],
+        "hardSkills":[
+            {
+                "label":"React",
+                "level":"Advanced"
+            },
+            {
+                "label":"Java",
+                "level":"Advanced"
+            },
+            {
+                "label":"HTML",
+                "level":"Advanced"
+            },
+            {
+                "label":"CSS",
+                "level":"Advanced"
+            },
+            {
+                "label":"Javascript",
+                "level":"Advanced"
+            },
+            {
+                "label":"PHP",
+                "level":"Advanced"
+            },
+            {
+                "label":"SQL",
+                "level":"Advanced"
+            },
+            {
+                "label":"C++",
+                "level":"Intermediate"
+            },
+            {
+                "label":"Symfony",
+                "level":"Intermediate"
+            },
+            {
+                "label":"Python",
+                "level":"Intermediate"
+            },
+            {
+                "label":"Angular",
+                "level":"Basic"
+            }
+        ],
+        "otherSkills":[
+            {"label":"Sass", "level":"Advanced"},
+            {"label":"Project Management", "level":"Advanced"},
+            {"label":"Scrum", "level":"Intermediate"},
+            {"label":"GitHub", "level":"Intermediate"}
+        ]
+    }
+  },
+  "FR": {
+    "navItems":["Accueil","Experience","Histoire","Contact"],
+    "type":"FR",
+    "home":{
+        "bannerTitle":"Découvrez ma passion de l'art de l'espace"
+    },
+    "sideBar":{
+        "avatar":{
+            "roles":["Développeur Web","UI/UX Designer"]
+        },
+        "infos":["Résidence","Cité","Age"],
+        "languages":[
+            {
+                "label":"Français",
+                "percentage":100
+            },
+            {
+                "label":"Arabe",
+                "percentage":90
+            },
+            {
+                "label":"Anglais",
+                "percentage":80
+            }
+        ],
+        "hardSkills":[
+            {
+                "label":"React",
+                "level":"Avancé"
+            },
+            {
+                "label":"Java",
+                "level":"Avancé"
+            },
+            {
+                "label":"HTML",
+                "level":"Avancé"
+            },
+            {
+                "label":"CSS",
+                "level":"Avancé"
+            },
+            {
+                "label":"Javascript",
+                "level":"Avancé"
+            },
+            {
+                "label":"PHP",
+                "level":"Avancé"
+            },
+            {
+                "label":"SQL",
+                "level":"Avancé"
+            },
+            {
+                "label":"C++",
+                "level":"Intermediaire"
+            },
+            {
+                "label":"Symfony",
+                "level":"Intermediaire"
+            },
+            {
+                "label":"Python",
+                "level":"Intermediaire"
+            },
+            {
+                "label":"Angular",
+                "level":"Basique"
+            }
+        ],
+        "otherSkills":[
+            {"label":"Sass", "level":"Avancé"},
+            {"label":"Project Management", "level":"Avancé"},
+            {"label":"Scrum", "level":"Intermediaire"},
+            {"label":"GitHub", "level":"Intermediaire"}
+        ]
+    }
+  }
+}
