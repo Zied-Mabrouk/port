@@ -89,15 +89,12 @@
       position: absolute;
       text-transform: uppercase;
       color: var(--light-grey-font);
-      letter-spacing: 2px;
-      top: 88px;
-      left: -2px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      transform: rotate(90deg);
-      height: 300px;
+      letter-spacing: 4px;
+      top: 32px;
+      left: calc(290px - 57px);
       opacity: 0.5;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
     }
   }
   .sidebar-other-skills {
@@ -110,16 +107,13 @@
     .floater {
       position: absolute;
       text-transform: uppercase;
-      opacity: 0.5;
       color: var(--light-grey-font);
-      letter-spacing: 2px;
-      top: 50px;
-      left: -2px;
-      width: 200px;
-      display: flex;
-      justify-content: flex-start;
-      transform: rotate(90deg);
-      height: 300px;
+      letter-spacing: 4px;
+      top: 32px;
+      left: calc(290px - 57px);
+      opacity: 0.5;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
     }
   }
   &::-webkit-scrollbar {
@@ -147,8 +141,8 @@
       border-radius: 50%;
       height: 25px;
       width: 25px;
-      opacity: .7;
-      &:hover{
+      opacity: 0.7;
+      &:hover {
         opacity: 1;
       }
       img {
