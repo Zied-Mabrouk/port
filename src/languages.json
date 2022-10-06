@@ -8,7 +8,7 @@
     },
     "sideBar":{
         "avatar":{
-            "roles":["Web Developer","UI/UX Designer"]
+            "roles":["Web Development","UI/UX Designing","SEO"]
         },
         "infos":[
             {"label":"Residence","content":"Tunisia"},
@@ -94,7 +94,7 @@
     },
     "sideBar":{
         "avatar":{
-            "roles":["Développeur Web","UI/UX Designer"]
+            "roles":["Développement Web","UI/UX Designing","Chargé référencement"]
         },
         "infos":[
             {"label":"Résidence","content":"Tunisie"},
