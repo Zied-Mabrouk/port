@@ -1,174 +1,251 @@
 {
-  "EN": {
-    "navItems":["Home","Experience","History","Contact"],
-    "type":"EN",
-    "home":{
-        "bannerTitle":"Discover my Amazing Art Space !",
-        "button":"Explore now"
-    },
-    "sideBar":{
-        "avatar":{
-            "roles":["Web Development","UI/UX Designing","SEO"]
+    "EN": {
+        "navItems": ["Home", "Experience", "History", "Contact"],
+        "type": "EN",
+        "home": {
+            "bannerTitle": "Discover my Amazing Art Space !",
+            "button": "Explore now",
+            "services": {
+                "title":"Services I offered in the past",
+                "cards":[
+                    {
+                        "label":"Web Development",
+                        "description":"During my career, I have worked on many projects in this field using various programming languages"
+                    },
+                    {
+                        "label":"SEO Specialist",
+                        "description":"While working on #TCB's website#",
+                        "link":"https://tcb.tn"
+                    },
+                    {
+                        "label":"Web Development",
+                        "description":"During my career, I have worked on many projects in this field using various programming languages"
+                    }
+                ]
+            }
         },
-        "infos":[
-            {"label":"Residence","content":"Tunisia"},
-            {"label":"City","content":"Ariana"},
-            {"label":"Age","content":22}
-        ],
-        "languages":[
-            {
-                "label":"French",
-                "percentage":100
+        "sideBar": {
+            "avatar": {
+                "roles": ["Web Development", "UI/UX Designing", "SEO"]
             },
-            {
-                "label":"Arabic",
-                "percentage":90
-            },
-            {
-                "label":"English",
-                "percentage":80
-            }
-        ],
-        "hardSkillsLabel":"hard skills",
-        "hardSkills":[
-            {
-                "label":"React",
-                "level":"Advanced"
-            },
-            {
-                "label":"Java",
-                "level":"Advanced"
-            },
-            {
-                "label":"HTML",
-                "level":"Advanced"
-            },
-            {
-                "label":"CSS",
-                "level":"Advanced"
-            },
-            {
-                "label":"Javascript",
-                "level":"Advanced"
-            },
-            {
-                "label":"PHP",
-                "level":"Advanced"
-            },
-            {
-                "label":"SQL",
-                "level":"Advanced"
-            },
-            {
-                "label":"C++",
-                "level":"Intermediate"
-            },
-            {
-                "label":"Symfony",
-                "level":"Intermediate"
-            },
-            {
-                "label":"Python",
-                "level":"Intermediate"
-            },
-            {
-                "label":"Angular",
-                "level":"Basic"
-            }
-        ],
-        "otherSkillsLabel":"other skills",
-        "otherSkills":[
-            {"label":"Sass", "level":"Advanced"},
-            {"label":"Project Management", "level":"Advanced"},
-            {"label":"Scrum", "level":"Intermediate"},
-            {"label":"GitHub", "level":"Intermediate"}
-        ]
-    }
-  },
-  "FR": {
-    "navItems":["Accueil","Experience","Histoire","Contact"],
-    "type":"FR",
-    "home":{
-        "bannerTitle":"Découvrez ma passion de l'art de l'espace",
-        "button":"Explorez maintenant"
+            "infos": [{
+                    "label": "Residence",
+                    "content": "Tunisia"
+                },
+                {
+                    "label": "City",
+                    "content": "Ariana"
+                },
+                {
+                    "label": "Age",
+                    "content": 22
+                }
+            ],
+            "languages": [{
+                    "label": "French",
+                    "percentage": 100
+                },
+                {
+                    "label": "Arabic",
+                    "percentage": 90
+                },
+                {
+                    "label": "English",
+                    "percentage": 80
+                }
+            ],
+            "hardSkillsLabel": "hard skills",
+            "hardSkills": [{
+                    "label": "React",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "Java",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "HTML",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "CSS",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "Javascript",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "PHP",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "SQL",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "Sass",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "C++",
+                    "level": "Intermediate"
+                },
+                {
+                    "label": "Symfony",
+                    "level": "Intermediate"
+                },
+                {
+                    "label": "Python",
+                    "level": "Intermediate"
+                },
+
+                {
+                    "label": "GitHub",
+                    "level": "Intermediate"
+                }, {
+                    "label": "Angular",
+                    "level": "Basic"
+                }
+
+            ],
+            "otherSkillsLabel": "other skills",
+            "otherSkills": [{
+                    "label": "Project Management",
+                    "level": "Advanced"
+                },
+                {
+                    "label": "Scrum",
+                    "level": "Intermediate"
+                },
+                {
+                    "label": "Photoshop",
+                    "level": "Intermediate"
+                },
+                {
+                    "label": "Premiere Pro",
+                    "level": "Intermediate"
+                },
+                {
+                    "label": "Illustrator",
+                    "level": "Basic"
+                }
+            ]
+        }
     },
-    "sideBar":{
-        "avatar":{
-            "roles":["Développement Web","UI/UX Designing","Chargé référencement"]
+    "FR": {
+        "navItems": ["Accueil", "Experience", "Histoire", "Contact"],
+        "type": "FR",
+        "home": {
+            "bannerTitle": "Découvrez ma passion de l'art de l'espace",
+            "button": "Explorez maintenant"
         },
-        "infos":[
-            {"label":"Résidence","content":"Tunisie"},
-            {"label":"Cité","content":"Ariana"},
-            {"label":"Age","content":22}
-        ],
-        "languages":[
-            {
-                "label":"Français",
-                "percentage":100
+        "sideBar": {
+            "avatar": {
+                "roles": ["Développement Web", "UI/UX Designing", "Chargé référencement"]
             },
-            {
-                "label":"Arabe",
-                "percentage":90
-            },
-            {
-                "label":"Anglais",
-                "percentage":80
-            }
-        ],
-        "hardSkillsLabel":"compétences techniques",
-        "hardSkills":[
-            {
-                "label":"React",
-                "level":"Avancé"
-            },
-            {
-                "label":"Java",
-                "level":"Avancé"
-            },
-            {
-                "label":"HTML",
-                "level":"Avancé"
-            },
-            {
-                "label":"CSS",
-                "level":"Avancé"
-            },
-            {
-                "label":"Javascript",
-                "level":"Avancé"
-            },
-            {
-                "label":"PHP",
-                "level":"Avancé"
-            },
-            {
-                "label":"SQL",
-                "level":"Avancé"
-            },
-            {
-                "label":"C++",
-                "level":"Intermediaire"
-            },
-            {
-                "label":"Symfony",
-                "level":"Intermediaire"
-            },
-            {
-                "label":"Python",
-                "level":"Intermediaire"
-            },
-            {
-                "label":"Angular",
-                "level":"Basique"
-            }
-        ],
-        "otherSkillsLabel":"autres compétences",
-        "otherSkills":[
-            {"label":"Sass", "level":"Avancé"},
-            {"label":"Project Management", "level":"Avancé"},
-            {"label":"Scrum", "level":"Intermediaire"},
-            {"label":"GitHub", "level":"Intermediaire"}
-        ]
+            "infos": [{
+                    "label": "Résidence",
+                    "content": "Tunisie"
+                },
+                {
+                    "label": "Cité",
+                    "content": "Ariana"
+                },
+                {
+                    "label": "Age",
+                    "content": 22
+                }
+            ],
+            "languages": [{
+                    "label": "Français",
+                    "percentage": 100
+                },
+                {
+                    "label": "Arabe",
+                    "percentage": 90
+                },
+                {
+                    "label": "Anglais",
+                    "percentage": 80
+                }
+            ],
+            "hardSkillsLabel": "compétences techniques",
+            "hardSkills": [{
+                    "label": "React",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "Java",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "HTML",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "CSS",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "Javascript",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "PHP",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "SQL",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "Sass",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "C++",
+                    "level": "Intermediaire"
+                },
+                {
+                    "label": "Symfony",
+                    "level": "Intermediaire"
+                },
+                {
+                    "label": "Python",
+                    "level": "Intermediaire"
+                },
+                {
+                    "label": "GitHub",
+                    "level": "Intermediaire"
+                },
+                {
+                    "label": "Angular",
+                    "level": "Basique"
+                }
+            ],
+            "otherSkillsLabel": "autres compétences",
+            "otherSkills": [{
+                    "label": "Project Management",
+                    "level": "Avancé"
+                },
+                {
+                    "label": "Scrum",
+                    "level": "Intermediaire"
+                },
+                {
+                    "label": "Photoshop",
+                    "level": "Intermediaire"
+                },
+                {
+                    "label": "Premiere Pro",
+                    "level": "Intermediaire"
+                },
+                {
+                    "label": "Illustrator",
+                    "level": "Basique"
+                }
+            ]
+        }
     }
-  }
 }

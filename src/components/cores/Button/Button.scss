@@ -8,6 +8,7 @@
   width: fit-content;
   cursor: pointer;
   transition: transform 500ms ease-in-out;
+  letter-spacing: 1.5px;
   &:hover{
     transform: translateY(-10px);
   }
