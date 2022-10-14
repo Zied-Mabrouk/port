@@ -13,7 +13,7 @@ export const LanguageContext = React.createContext();
 function App() {
   let [active, setActive] = React.useState(false);
   let [main, setMain] = React.useState(<Home />);
-  let [selected, setSelected] = React.useState()
+  let [selected, setSelected] = React.useState("Home")
   let [language, setLanguage] = React.useState(Languages.EN);
   React.useEffect(() => {
     switch (selected) {
@@ -50,6 +50,7 @@ function App() {
             active={active}
             setActive={setActive}
             setSelected={setSelected}
+            selected={selected}
           />
         </div>
       </div>

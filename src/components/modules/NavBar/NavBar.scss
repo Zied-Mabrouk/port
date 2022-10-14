@@ -32,12 +32,20 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
+    gap: 6px;
+    .navbar-item-active
+    {
+      border-bottom: 1px solid var(--main-color);
+    }
     span {
       transition: all ease-in-out;
       transform: translateX(150px);
       font-size: 14px;
       color: var(--light-grey-font);
       cursor: pointer;
+      width: fit-content;
+      padding-inline: 2px;
+      line-height: 1.1;
     }
     span:nth-child(1) {
       transition-duration: 1000ms;

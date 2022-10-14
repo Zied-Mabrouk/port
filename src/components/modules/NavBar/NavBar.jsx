@@ -3,7 +3,7 @@ import "./NavBar.scss";
 import Languages from "../../../languages.json";
 import { LanguageContext } from "../../../App";
 
-const NavBar = ({ active, setActive, setSelected }) => {
+const NavBar = ({ active, setActive, selected,setSelected }) => {
   const handleClick = (val) => {
     setSelected(val);
     setActive(false);
@@ -49,7 +49,7 @@ const NavBar = ({ active, setActive, setSelected }) => {
       <div className="navbar-items">
         {navItems &&
           navItems.map((item, key) => (
-            <span key={key} onClick={() => handleClick(item)}>
+            <span className={item===selected?"navbar-item-active":""} key={key} onClick={() => handleClick(item)}>
               {item}
             </span>
           ))}
