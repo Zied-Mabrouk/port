@@ -3,8 +3,7 @@ import "./ServiceCard.scss"
 
 const ServiceCard = ({service}) => {
     const parts = service.description.includes("#")?service.description.split("#"):"";
-    const link = parts?parts[1]:"";
-  console.log(link);
+  
   return (
     <div className='service-card'>
         <h1>

@@ -142,7 +142,29 @@
         "type": "FR",
         "home": {
             "bannerTitle": "Découvrez ma passion de l'art de l'espace",
-            "button": "Explorez maintenant"
+            "button": "Explorez maintenant",
+            "services": {
+                "title":"Services I offered in the past",
+                "cards":[
+                    {
+                        "label":"Développement Web",
+                        "description":"Durant ma carrière, J'ai eu le plaisir de travailler sur plusieurs projets en utilisant divers langages de programmation."
+                    },
+                    {
+                        "label":"Spécialiste Référencement",
+                        "description":"En travaillant sur #le site de TCB#, j'ai eu l'opportunité de renforcer le référencement naturel du site afin de le propulser aux premiers rangs des résultats de recherche sur google en Tunisie.",
+                        "link":"https://tcb.tn"
+                    },
+                    {
+                        "label":"UI/UX Design",
+                        "description":"Etant un développeur web, je suis toujours resté à l'affût de la complexité des interfaces que j'utilise et la façon la plus optimisée de les rendre plus orgonomiques et intuitives"
+                    },
+                    {
+                        "label":"Créateur de contenu media",
+                        "description":"Tout au long de mon parcours académique, j'ai très souvent eu à m'occuper des logos, brochures et vidéos des entreprises afin to promouvoir leur image de marque."
+                    }
+                ]
+            }
         },
         "sideBar": {
             "avatar": {

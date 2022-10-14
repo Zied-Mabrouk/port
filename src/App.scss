@@ -53,6 +53,12 @@ html {
   width: calc(min(100vw - 402px ,1440px - 370px ) );
   padding: 0 32px;
   transition: all 500ms ease-in-out;
+  overflow-y: scroll;
+  height: calc(100vh - 32px);
+  max-height: calc(100vh - 32px);
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 .page-content-active{
   transform: translateX(-150px);

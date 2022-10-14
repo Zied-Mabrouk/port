@@ -3,7 +3,7 @@ import "./History.scss"
 
 const History = () => {
   return (
-    <div>History</div>
+    <div></div>
   )
 }
 
