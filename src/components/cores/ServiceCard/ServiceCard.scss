@@ -5,6 +5,7 @@
     width: 32%;
     padding: 30px;
     gap: 8px;
+    margin-bottom: 16px;
     h1{
         font-size: 16px;
         position: relative;
@@ -22,7 +23,7 @@
             left: 50%;
             height: 3px;
             background-color: var(--main-color);
-            transition: all 700ms ease-in-out;
+            transition: all 500ms ease-in-out;
         }
         &::before{
             content: "";
@@ -32,7 +33,7 @@
             right: 50%;
             height: 3px;
             background-color: var(--main-color);
-            transition: all 700ms ease-in-out;
+            transition: all 500ms ease-in-out;
         }
     }
     &:hover h1{
@@ -48,6 +49,5 @@
         color: var(--light-grey-font);
         font-size: 12px;
         text-align: center;
-        
     }
 }

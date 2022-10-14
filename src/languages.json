@@ -10,16 +10,20 @@
                 "cards":[
                     {
                         "label":"Web Development",
-                        "description":"During my career, I have worked on many projects in this field using various programming languages"
+                        "description":"During my career, I have worked on many projects in this field using various programming languages."
                     },
                     {
                         "label":"SEO Specialist",
-                        "description":"While working on #TCB's website#, I had the opportunity to boost the SEO to the top in order to make the website appear in the first search results in Tunisia",
+                        "description":"While working on #TCB's website#, I had the opportunity to boost the SEO to the top in order to make the website appear in the first search results in Tunisia.",
                         "link":"https://tcb.tn"
                     },
                     {
                         "label":"UI/UX Design",
-                        "description":"As a web developer, I have always been "
+                        "description":"As a web developer, I have always been paying attention to the complexity of the UI I'm using and how to make it as ergonomic and user friendly as possible."
+                    },
+                    {
+                        "label":"Media Content Creator",
+                        "description":"Along my academic journey, I worked a lot with brands' logos, brochures and videos to promote the corporate image."
                     }
                 ]
             }
