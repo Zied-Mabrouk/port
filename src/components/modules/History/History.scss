@@ -1,4 +1,11 @@
-.history{
-    display: flex;
-    flex-wrap: wrap;
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  .history-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    width: 100%;
+  }
 }

@@ -3,14 +3,13 @@ import "./ProgressBar.scss";
 
 const ProgressBar = ({ title, percentage }) => {
   var [count, setCount] = React.useState(0);
-  React.useEffect(() => {
-      const inter = setInterval(()=>{
-        setCount(count + 1);
-        console.log("added");
-      }, 1000);
-      if(percentage <= count )
-        clearInterval(inter)
-  }, [percentage]);
+  const updateCount = () => {
+    const inter = setInterval(() => {
+      setCount(++count);
+      if (percentage <= count) clearInterval(inter);
+    }, 10);
+  };
+  React.useEffect(updateCount, [percentage]);
   return (
     <div className="progressbar">
       <div className="progressbar-content">

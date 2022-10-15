@@ -1,277 +1,312 @@
 {
-    "EN": {
-        "navItems": ["Home", "Experience", "History", "Contact"],
-        "type": "EN",
-        "home": {
-            "bannerTitle": "Discover my Amazing Art Space !",
-            "button": "Explore now",
-            "services": {
-                "title":"Services I offered in the past",
-                "cards":[
-                    {
-                        "label":"Web Development",
-                        "description":"During my career, I have worked on many projects in this field using various programming languages."
-                    },
-                    {
-                        "label":"SEO Specialist",
-                        "description":"While working on #TCB's website#, I had the opportunity to boost the SEO to the top in order to make the website appear in the first search results in Tunisia.",
-                        "link":"https://tcb.tn"
-                    },
-                    {
-                        "label":"UI/UX Design",
-                        "description":"As a web developer, I have always been paying attention to the complexity of the UI I'm using and how to make it as ergonomic and user friendly as possible."
-                    },
-                    {
-                        "label":"Media Content Creator",
-                        "description":"Along my academic journey, I worked a lot with brands' logos, brochures and videos to promote the corporate image."
-                    }
-                ]
-            }
+  "EN": {
+    "navItems": ["Home", "Experience", "History", "Contact"],
+    "type": "EN",
+    "sideBar": {
+      "avatar": {
+        "roles": ["Web Development", "UI/UX Designing", "SEO"]
+      },
+      "infos": [
+        {
+          "label": "Residence",
+          "content": "Tunisia"
         },
-        "sideBar": {
-            "avatar": {
-                "roles": ["Web Development", "UI/UX Designing", "SEO"]
-            },
-            "infos": [{
-                    "label": "Residence",
-                    "content": "Tunisia"
-                },
-                {
-                    "label": "City",
-                    "content": "Ariana"
-                },
-                {
-                    "label": "Age",
-                    "content": 22
-                }
-            ],
-            "languages": [{
-                    "label": "French",
-                    "percentage": 100
-                },
-                {
-                    "label": "Arabic",
-                    "percentage": 90
-                },
-                {
-                    "label": "English",
-                    "percentage": 80
-                }
-            ],
-            "hardSkillsLabel": "hard skills",
-            "hardSkills": [{
-                    "label": "React",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "Java",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "HTML",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "CSS",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "Javascript",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "PHP",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "SQL",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "Sass",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "C++",
-                    "level": "Intermediate"
-                },
-                {
-                    "label": "Symfony",
-                    "level": "Intermediate"
-                },
-                {
-                    "label": "Python",
-                    "level": "Intermediate"
-                },
-
-                {
-                    "label": "GitHub",
-                    "level": "Intermediate"
-                }, {
-                    "label": "Angular",
-                    "level": "Basic"
-                }
-
-            ],
-            "otherSkillsLabel": "other skills",
-            "otherSkills": [{
-                    "label": "Project Management",
-                    "level": "Advanced"
-                },
-                {
-                    "label": "Scrum",
-                    "level": "Intermediate"
-                },
-                {
-                    "label": "Photoshop",
-                    "level": "Intermediate"
-                },
-                {
-                    "label": "Premiere Pro",
-                    "level": "Intermediate"
-                },
-                {
-                    "label": "Illustrator",
-                    "level": "Basic"
-                }
-            ]
+        {
+          "label": "City",
+          "content": "Ariana"
+        },
+        {
+          "label": "Age",
+          "content": 22
         }
+      ],
+      "languages": [
+        {
+          "label": "French",
+          "percentage": 100
+        },
+        {
+          "label": "Arabic",
+          "percentage": 90
+        },
+        {
+          "label": "English",
+          "percentage": 80
+        }
+      ],
+      "hardSkillsLabel": "hard skills",
+      "hardSkills": [
+        {
+          "label": "React",
+          "level": "Advanced"
+        },
+        {
+          "label": "Java",
+          "level": "Advanced"
+        },
+        {
+          "label": "HTML",
+          "level": "Advanced"
+        },
+        {
+          "label": "CSS",
+          "level": "Advanced"
+        },
+        {
+          "label": "Javascript",
+          "level": "Advanced"
+        },
+        {
+          "label": "PHP",
+          "level": "Advanced"
+        },
+        {
+          "label": "SQL",
+          "level": "Advanced"
+        },
+        {
+          "label": "Sass",
+          "level": "Advanced"
+        },
+        {
+          "label": "C++",
+          "level": "Intermediate"
+        },
+        {
+          "label": "Symfony",
+          "level": "Intermediate"
+        },
+        {
+          "label": "Python",
+          "level": "Intermediate"
+        },
+
+        {
+          "label": "GitHub",
+          "level": "Intermediate"
+        },
+        {
+          "label": "Angular",
+          "level": "Basic"
+        }
+      ],
+      "otherSkillsLabel": "other skills",
+      "otherSkills": [
+        {
+          "label": "Project Management",
+          "level": "Advanced"
+        },
+        {
+          "label": "Scrum",
+          "level": "Intermediate"
+        },
+        {
+          "label": "Photoshop",
+          "level": "Intermediate"
+        },
+        {
+          "label": "Premiere Pro",
+          "level": "Intermediate"
+        },
+        {
+          "label": "Illustrator",
+          "level": "Basic"
+        }
+      ]
     },
-    "FR": {
-        "navItems": ["Accueil", "Experience", "Histoire", "Contact"],
-        "type": "FR",
-        "home": {
-            "bannerTitle": "Découvrez ma passion de l'art de l'espace",
-            "button": "Explorez maintenant",
-            "services": {
-                "title":"Services I offered in the past",
-                "cards":[
-                    {
-                        "label":"Développement Web",
-                        "description":"Durant ma carrière, J'ai eu le plaisir de travailler sur plusieurs projets en utilisant divers langages de programmation."
-                    },
-                    {
-                        "label":"Spécialiste Référencement",
-                        "description":"En travaillant sur #le site de TCB#, j'ai eu l'opportunité de renforcer le référencement naturel du site afin de le propulser aux premiers rangs des résultats de recherche sur google en Tunisie.",
-                        "link":"https://tcb.tn"
-                    },
-                    {
-                        "label":"UI/UX Design",
-                        "description":"Etant un développeur web, je suis toujours resté à l'affût de la complexité des interfaces que j'utilise et la façon la plus optimisée de les rendre plus orgonomiques et intuitives."
-                    },
-                    {
-                        "label":"Créateur de contenu media",
-                        "description":"Tout au long de mon parcours académique, j'ai très souvent eu à m'occuper des logos, brochures et vidéos des entreprises afin to promouvoir leur image de marque."
-                    }
-                ]
-            }
+    "home": {
+      "bannerTitle": "Discover my Amazing Art Space !",
+      "button": "Explore now",
+      "services": {
+        "title": "Services I offered in the past",
+        "cards": [
+          {
+            "label": "Web Development",
+            "description": "During my career, I have worked on many projects in this field using various programming languages."
+          },
+          {
+            "label": "SEO Specialist",
+            "description": "While working on #TCB's website#, I had the opportunity to boost the SEO to the top in order to make the website appear in the first search results in Tunisia.",
+            "link": "https://tcb.tn"
+          },
+          {
+            "label": "UI/UX Design",
+            "description": "As a web developer, I have always been paying attention to the complexity of the UI I'm using and how to make it as ergonomic and user friendly as possible."
+          },
+          {
+            "label": "Media Content Creator",
+            "description": "Along my academic journey, I worked a lot with brands' logos, brochures and videos to promote the corporate image."
+          }
+        ]
+      }
+    },
+    "history": {
+        "title":"My journey",
+      "cards": [
+        {
+          "title": "Khaiereddine Becha",
+          "role": "student",
+          "date": "Sep 2015 - Jun 2019",
+          "description": "Honestly I wasn't a big fan of my middle school but it was a necessary step in my life to learn the basic things and to have insight about science and physics . I got my baccalaureate degree in Science & physics."
         },
-        "sideBar": {
-            "avatar": {
-                "roles": ["Développement Web", "UI/UX Designing", "Chargé référencement"]
-            },
-            "infos": [{
-                    "label": "Résidence",
-                    "content": "Tunisie"
-                },
-                {
-                    "label": "Cité",
-                    "content": "Ariana"
-                },
-                {
-                    "label": "Age",
-                    "content": 22
-                }
-            ],
-            "languages": [{
-                    "label": "Français",
-                    "percentage": 100
-                },
-                {
-                    "label": "Arabe",
-                    "percentage": 90
-                },
-                {
-                    "label": "Anglais",
-                    "percentage": 80
-                }
-            ],
-            "hardSkillsLabel": "compétences techniques",
-            "hardSkills": [{
-                    "label": "React",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "Java",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "HTML",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "CSS",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "Javascript",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "PHP",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "SQL",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "Sass",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "C++",
-                    "level": "Intermediaire"
-                },
-                {
-                    "label": "Symfony",
-                    "level": "Intermediaire"
-                },
-                {
-                    "label": "Python",
-                    "level": "Intermediaire"
-                },
-                {
-                    "label": "GitHub",
-                    "level": "Intermediaire"
-                },
-                {
-                    "label": "Angular",
-                    "level": "Basique"
-                }
-            ],
-            "otherSkillsLabel": "autres compétences",
-            "otherSkills": [{
-                    "label": "Project Management",
-                    "level": "Avancé"
-                },
-                {
-                    "label": "Scrum",
-                    "level": "Intermediaire"
-                },
-                {
-                    "label": "Photoshop",
-                    "level": "Intermediaire"
-                },
-                {
-                    "label": "Premiere Pro",
-                    "level": "Intermediaire"
-                },
-                {
-                    "label": "Illustrator",
-                    "level": "Basique"
-                }
-            ]
+        {
+          "title": "ESPRIT",
+          "role": "student",
+          "date": "Sep 2019 - Now",
+          "description": "This the most exciting step in my life because I started to learn more about programming when it's been my passion since I was a kid. Esprit is a great school that provides me with a lot of opportunities to learn and to grow. I'm currently studying IT engineering in web development."
+        },
+        {
+            "title":"TCB's Website",
+            "role":"Web Developer & SEO Specialist",
+            "date":"Dec 2021 - Mar 2022",
+            "description":"I had the opportunity to create the official website of TCB from scratch which I implemented using HTML, CSS, JS ( including bootstrap and owl-carousel library) for the Front-end and PHP and MySQL for the Back-end. The website is dynamic and responsive. Working solo on this project made me discover new libraries as the one listed above and reinforce my knowledge about CSS."
         }
+      ]
     }
+  },
+  "FR": {
+    "navItems": ["Accueil", "Experience", "Histoire", "Contact"],
+    "type": "FR",
+    "home": {
+      "bannerTitle": "Découvrez ma passion de l'art de l'espace",
+      "button": "Explorez maintenant",
+      "services": {
+        "title": "Services I offered in the past",
+        "cards": [
+          {
+            "label": "Développement Web",
+            "description": "Durant ma carrière, J'ai eu le plaisir de travailler sur plusieurs projets en utilisant divers langages de programmation."
+          },
+          {
+            "label": "Spécialiste Référencement",
+            "description": "En travaillant sur #le site de TCB#, j'ai eu l'opportunité de renforcer le référencement naturel du site afin de le propulser aux premiers rangs des résultats de recherche sur google en Tunisie.",
+            "link": "https://tcb.tn"
+          },
+          {
+            "label": "UI/UX Design",
+            "description": "Etant un développeur web, je suis toujours resté à l'affût de la complexité des interfaces que j'utilise et la façon la plus optimisée de les rendre plus orgonomiques et intuitives."
+          },
+          {
+            "label": "Créateur de contenu media",
+            "description": "Tout au long de mon parcours académique, j'ai très souvent eu à m'occuper des logos, brochures et vidéos des entreprises afin to promouvoir leur image de marque."
+          }
+        ]
+      }
+    },
+    "sideBar": {
+      "avatar": {
+        "roles": [
+          "Développement Web",
+          "UI/UX Designing",
+          "Chargé référencement"
+        ]
+      },
+      "infos": [
+        {
+          "label": "Résidence",
+          "content": "Tunisie"
+        },
+        {
+          "label": "Cité",
+          "content": "Ariana"
+        },
+        {
+          "label": "Age",
+          "content": 22
+        }
+      ],
+      "languages": [
+        {
+          "label": "Français",
+          "percentage": 100
+        },
+        {
+          "label": "Arabe",
+          "percentage": 90
+        },
+        {
+          "label": "Anglais",
+          "percentage": 80
+        }
+      ],
+      "hardSkillsLabel": "compétences techniques",
+      "hardSkills": [
+        {
+          "label": "React",
+          "level": "Avancé"
+        },
+        {
+          "label": "Java",
+          "level": "Avancé"
+        },
+        {
+          "label": "HTML",
+          "level": "Avancé"
+        },
+        {
+          "label": "CSS",
+          "level": "Avancé"
+        },
+        {
+          "label": "Javascript",
+          "level": "Avancé"
+        },
+        {
+          "label": "PHP",
+          "level": "Avancé"
+        },
+        {
+          "label": "SQL",
+          "level": "Avancé"
+        },
+        {
+          "label": "Sass",
+          "level": "Avancé"
+        },
+        {
+          "label": "C++",
+          "level": "Intermediaire"
+        },
+        {
+          "label": "Symfony",
+          "level": "Intermediaire"
+        },
+        {
+          "label": "Python",
+          "level": "Intermediaire"
+        },
+        {
+          "label": "GitHub",
+          "level": "Intermediaire"
+        },
+        {
+          "label": "Angular",
+          "level": "Basique"
+        }
+      ],
+      "otherSkillsLabel": "autres compétences",
+      "otherSkills": [
+        {
+          "label": "Project Management",
+          "level": "Avancé"
+        },
+        {
+          "label": "Scrum",
+          "level": "Intermediaire"
+        },
+        {
+          "label": "Photoshop",
+          "level": "Intermediaire"
+        },
+        {
+          "label": "Premiere Pro",
+          "level": "Intermediaire"
+        },
+        {
+          "label": "Illustrator",
+          "level": "Basique"
+        }
+      ]
+    }
+  }
 }
