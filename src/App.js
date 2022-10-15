@@ -12,8 +12,8 @@ export const LanguageContext = React.createContext();
 
 function App() {
   let [active, setActive] = React.useState(false);
-  let [main, setMain] = React.useState(<Home />);
-  let [selected, setSelected] = React.useState("Home")
+  let [main, setMain] = React.useState(<History />);
+  let [selected, setSelected] = React.useState("History")
   let [language, setLanguage] = React.useState(Languages.EN);
   React.useEffect(() => {
     switch (selected) {

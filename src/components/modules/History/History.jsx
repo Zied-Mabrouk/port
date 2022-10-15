@@ -1,9 +1,12 @@
 import React from 'react'
+import EducationCard from '../../cores/EducationCard/EducationCard'
 import "./History.scss"
 
 const History = () => {
   return (
-    <div></div>
+    <div className='history'>
+      <EducationCard  />
+    </div>
   )
 }
 
