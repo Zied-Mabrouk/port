@@ -2,21 +2,23 @@ import React from "react";
 import "./EducationCard.scss";
 
 const EducationCard = ({ card }) => {
-  const startDate = card.date.split("-")[0];
-  const endDate = card.date.split("-")[1];
   return (
     <div className="education-card">
-       <div className="box-inner">
       <div>
         <h1>{card.title}</h1>
-        <span>
-          {card.date }
-        </span>
-      
-     </div>
+        <span>{card.date}</span>
+      </div>
+      {
+        card.thumb&&
+      <div className="thumbnail">
+        <div>
+
+        <img src={"./img/history/"+card.thumb} alt="" />
+        </div>
+      </div>
+      }
       <h2>{card.role}</h2>
       <p>{card.description}</p>
-      </div>
     </div>
   );
 };

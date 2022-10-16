@@ -1,13 +1,12 @@
 {
   "EN": {
-    "navItems": ["Home", "Experience", "History", "Contact"],
+    "navItems": ["Home", "History", "Contact"],
     "type": "EN",
     "sideBar": {
       "avatar": {
         "roles": ["Web Development", "UI/UX Designing", "SEO"]
       },
-      "infos": [
-        {
+      "infos": [{
           "label": "Residence",
           "content": "Tunisia"
         },
@@ -20,8 +19,7 @@
           "content": 22
         }
       ],
-      "languages": [
-        {
+      "languages": [{
           "label": "French",
           "percentage": 100
         },
@@ -35,8 +33,7 @@
         }
       ],
       "hardSkillsLabel": "hard skills",
-      "hardSkills": [
-        {
+      "hardSkills": [{
           "label": "React",
           "level": "Advanced"
         },
@@ -91,8 +88,7 @@
         }
       ],
       "otherSkillsLabel": "other skills",
-      "otherSkills": [
-        {
+      "otherSkills": [{
           "label": "Project Management",
           "level": "Advanced"
         },
@@ -119,8 +115,7 @@
       "button": "Explore now",
       "services": {
         "title": "Services I offered in the past",
-        "cards": [
-          {
+        "cards": [{
             "label": "Web Development",
             "description": "During my career, I have worked on many projects in this field using various programming languages."
           },
@@ -141,39 +136,39 @@
       }
     },
     "history": {
-        "title":"My Journey",
-      "cards": [
-        {
+      "title": "My Journey",
+      "cards": [{
           "title": "Khaiereddine Becha",
           "role": "student",
           "date": "Sep 2015 - Jun 2019",
+          "thumb": "LKA.jpg",
           "description": "Honestly I wasn't a big fan of my middle school but it was a necessary step in my life to learn the basic things and to have insight about science and physics . I got my baccalaureate degree in Science & physics."
         },
         {
+          "title": "TCB's Website",
+          "role": "Web Developer & SEO Specialist",
+          "date": "Dec 2021 - Mar 2022",
+          "thumb": "tcb.png",
+          "description": "I had the opportunity to create the official website of TCB from scratch which I implemented using HTML, CSS, JS ( including bootstrap and owl-carousel library) for the Front-end and PHP and MySQL for the Back-end. The website is dynamic and responsive. Working solo on this project made me discover new libraries as the one listed above and reinforce my knowledge about CSS."
+        }, {
           "title": "ESPRIT",
           "role": "student",
           "date": "Sep 2019 - Now",
+          "thumb": "esprit.png",
           "description": "This the most exciting step in my life because I started to learn more about programming when it's been my passion since I was a kid. Esprit is a great school that provides me with a lot of opportunities to learn and to grow. I'm currently studying IT engineering in web development."
-        },
-        {
-            "title":"TCB's Website",
-            "role":"Web Developer & SEO Specialist",
-            "date":"Dec 2021 - Mar 2022",
-            "description":"I had the opportunity to create the official website of TCB from scratch which I implemented using HTML, CSS, JS ( including bootstrap and owl-carousel library) for the Front-end and PHP and MySQL for the Back-end. The website is dynamic and responsive. Working solo on this project made me discover new libraries as the one listed above and reinforce my knowledge about CSS."
         }
       ]
     }
   },
   "FR": {
-    "navItems": ["Accueil", "Experience", "Histoire", "Contact"],
+    "navItems": ["Accueil", "Histoire", "Contact"],
     "type": "FR",
     "home": {
       "bannerTitle": "Découvrez ma passion de l'art de l'espace",
       "button": "Explorez maintenant",
       "services": {
         "title": "Services I offered in the past",
-        "cards": [
-          {
+        "cards": [{
             "label": "Développement Web",
             "description": "Durant ma carrière, J'ai eu le plaisir de travailler sur plusieurs projets en utilisant divers langages de programmation."
           },
@@ -201,8 +196,7 @@
           "Chargé référencement"
         ]
       },
-      "infos": [
-        {
+      "infos": [{
           "label": "Résidence",
           "content": "Tunisie"
         },
@@ -215,8 +209,7 @@
           "content": 22
         }
       ],
-      "languages": [
-        {
+      "languages": [{
           "label": "Français",
           "percentage": 100
         },
@@ -230,8 +223,7 @@
         }
       ],
       "hardSkillsLabel": "compétences techniques",
-      "hardSkills": [
-        {
+      "hardSkills": [{
           "label": "React",
           "level": "Avancé"
         },
@@ -285,8 +277,7 @@
         }
       ],
       "otherSkillsLabel": "autres compétences",
-      "otherSkills": [
-        {
+      "otherSkills": [{
           "label": "Project Management",
           "level": "Avancé"
         },

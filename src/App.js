@@ -21,12 +21,9 @@ function App() {
         setMain(<Home />);
         break;
       case language.navItems[1]:
-        setMain(<Experience />);
-        break;
-      case language.navItems[2]:
         setMain(<History />);
         break;
-      case language.navItems[3]:
+      case language.navItems[2]:
         setMain(<Contact />);
         break;
 
