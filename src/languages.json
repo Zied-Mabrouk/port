@@ -148,7 +148,7 @@
           "title": "TCB's Website",
           "role": "Web Developer & SEO Specialist",
           "date": "Dec 2021 - Mar 2022",
-          "thumb": "tcb.png",
+          "thumb": "tcbweb.png",
           "description": "I had the opportunity to create the official website of TCB from scratch which I implemented using HTML, CSS, JS ( including bootstrap and owl-carousel library) for the Front-end and PHP and MySQL for the Back-end. The website is dynamic and responsive. Working solo on this project made me discover new libraries as the one listed above and reinforce my knowledge about CSS."
         }, {
           "title": "ESPRIT",
