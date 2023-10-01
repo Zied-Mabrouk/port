@@ -1,36 +1,42 @@
 import React from "react";
-import "./ProgressBar.scss";
 
-const ProgressBar = ({ title, percentage }) => {
+const ProgressBar = ({ label, percentage }) => {
   var [count, setCount] = React.useState(0);
-  const updateCount = () => {
+  React.useEffect(() => {
     const inter = setInterval(() => {
-      setCount(++count);
+      console.log(count);
+      setCount((count) => {
+        if (percentage <= count) {
+          clearInterval(inter);
+          return percentage;
+        } else {
+          return count + 1;
+        }
+      });
       if (percentage <= count) clearInterval(inter);
     }, 10);
-  };
-  React.useEffect(updateCount, [percentage]);
+    return () => clearInterval(inter);
+  }, [percentage]);
   return (
-    <div className="progressbar">
-      <div className="progressbar-content">
+    <div className="relative w-14 flex items-center flex-col gap-2">
+      <div className="absolute top-0 h-14 flex items-center text-xs text-main">
         <span>{count + "%"}</span>
       </div>
       <svg viewBox="0 0 100 100">
         <path
           d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
-          stroke="#eee"
+          stroke="#191923"
           strokeWidth="7"
           fillOpacity="0"
         ></path>
         <path
           d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93"
-          stroke="#555"
           strokeWidth="7"
           fillOpacity="0"
-          className={"path-" + percentage}
+          className={"stroke-main path-" + percentage}
         ></path>
       </svg>
-      <h2 className="progressbar-title">{title}</h2>
+      <h2 className="text-xs">{label}</h2>
     </div>
   );
 };

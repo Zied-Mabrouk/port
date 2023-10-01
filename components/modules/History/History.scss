@@ -10,3 +10,11 @@
     letter-spacing: 1px;
   }
 }
+
+@media (max-width: 768px){
+  .history{
+    .history-title{
+      text-align: center;
+    }
+  }
+}

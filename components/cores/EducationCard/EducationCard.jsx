@@ -5,7 +5,11 @@ const EducationCard = ({ card }) => {
   return (
     <div className="education-card">
       <div>
+        <div className="education-card-titles">
+
         <h1>{card.title}</h1>
+      <h2>{card.role}</h2>
+        </div>
         <span>{card.date}</span>
       </div>
       {
@@ -17,7 +21,6 @@ const EducationCard = ({ card }) => {
         </div>
       </div>
       }
-      <h2>{card.role}</h2>
       <p>{card.description}</p>
     </div>
   );
