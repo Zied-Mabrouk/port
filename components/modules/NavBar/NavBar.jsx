@@ -1,22 +1,31 @@
+import { LanguageContext } from "@/pages/_app";
+import Link from "next/link";
 import React, { useContext } from "react";
-import "./NavBar.scss";
-import { LanguageContext } from "../../../App";
 
-const NavBar = ({ active, setActive, selected, setSelected }) => {
+const NavBar = ({ active, setActive, swapLanguage }) => {
+  const [language, setLanguage] = React.useContext(LanguageContext);
   const handleClick = (val) => {
-    setSelected(val);
-    setActive(false);
+    // setSelected(val);
+    // setActive(false);
   };
-  const handleLanguageClick = (val) => {
-    if (language === val) return;
-    setLanguage(Languages[val]);
-  };
+  const selected = "";
+  const width = active ? "230px" : "10vh";
 
-  const [language, setLanguage] = useContext(LanguageContext);
   const navItems = language.navItems;
+  const durations = navItems.map((item, key) => ({
+    transitionDuration: `${key * 0.1 + 1}s`,
+  }));
+  const isEnglish = language.type === "EN";
   return (
-    <div className={"navbar" + (active ? " active-navbar" : "")}>
-      <div className="navbar-header">
+    <div
+      className={`navbar bg-secondary relative transition-[width] overflow-hidden`}
+      style={{ maxWidth: width, minWidth: width }}
+    >
+      <div
+        className={`navbar-header px-8 bg-accent w-full h-[10%] flex items-center ${
+          active ? "justify-left" : "justify-center"
+        }`}
+      >
         {active ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,6 +37,7 @@ const NavBar = ({ active, setActive, selected, setSelected }) => {
             strokeWidth="6"
             strokeLinecap="round"
             onClick={() => setActive(!active)}
+            className="fill-white cursor-pointer"
           >
             <line x1="0" y1="0" x2="50" y2="50" />
             <line x1="50" y1="0" x2="0" y2="50" />
@@ -37,6 +47,7 @@ const NavBar = ({ active, setActive, selected, setSelected }) => {
             viewBox="0 0 100 80"
             width="20"
             height="20"
+            className="fill-white cursor-pointer"
             onClick={() => setActive(!active)}
           >
             <rect width="100" height="12"></rect>
@@ -45,28 +56,35 @@ const NavBar = ({ active, setActive, selected, setSelected }) => {
           </svg>
         )}
       </div>
-      <div className="navbar-items">
+      <div className="navbar-items h-[75%] gap-2 duration-[1s] flex flex-col justify-center px-8">
         {navItems &&
           navItems.map((item, key) => (
-            <span
-              className={item === selected ? "navbar-item-active" : ""}
-              key={key}
+            <Link
+              style={durations[key]}
               onClick={() => handleClick(item)}
+              className={`transition-all text-grey-text text-sm delay-200 ${
+                active ? "translate-x-0" : "translate-x-32"
+              }`}
+              href={item.toLowerCase()}
             >
               {item}
-            </span>
+            </Link>
           ))}
       </div>
-      <div className="navbar-languages">
+      <div className="navbar-languages h-[15%] flex flex-col items-center justify-center gap-2 text-grey-text text-xs bg-accent">
         <div
-          className={language.type === "FR" ? "active-language" : ""}
-          onClick={() => handleLanguageClick("FR")}
+          className={`rounded-full p-[1px] w-[25px] font-semibold cursor-pointer aspect-square flex justify-center items-center ${
+            isEnglish ? "bg-dark" : "bg-main"
+          }`}
+          onClick={swapLanguage}
         >
           <span>FR</span>
         </div>
         <div
-          className={language.type === "EN" ? "active-language" : ""}
-          onClick={() => handleLanguageClick("EN")}
+          className={`rounded-full p-[1px] w-[25px] font-semibold cursor-pointer aspect-square flex justify-center items-center ${
+            !isEnglish ? "bg-dark" : "bg-main text-dark"
+          }`}
+          onClick={swapLanguage}
         >
           <span>EN</span>
         </div>

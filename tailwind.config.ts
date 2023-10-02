@@ -14,6 +14,7 @@ const config: Config = {
         "grey-text": "#8c8c8e",
         main: "#ffc107",
         skill: "#cd88081a",
+        dark: "#1e1e28",
       },
     },
   },
