@@ -6,7 +6,6 @@ import { LanguageContext } from './_app';
 export default function Home() {
   let [language] = useContext(LanguageContext);
   // const home = language['home'];
-  console.log(language)
   return (
     <div className="home">
       {/* <div className="home-banner">

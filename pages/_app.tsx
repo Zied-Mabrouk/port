@@ -21,10 +21,17 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <LanguageContext.Provider value={[Languages[language], setLanguage]}>
 
-      <div className='container'>
+      <div className='container gap-[10px]'>
         <SideBar />
 
-        <div className={"h-full overflow-y-auto w-[min(100vw-402px,1070px)] transition-all"}>
+        <div className={`content h-full overflow-y-auto relative min-w-[73.5%] w-[73.5%] delay-200 ease-in-out transition-all ${activeNavbar ? '-translate-x-32' : 'translate-x-0'
+          }
+        }`}>
+          {
+            activeNavbar && <div className='absolute top-0 left-0 w-full h-full bg-[rgba(25,25,35,.4)]'>
+
+            </div>
+          }
           <Component {...pageProps} />
         </div>
         <NavBar

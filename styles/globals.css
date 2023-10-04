@@ -57,6 +57,7 @@ body {
   overflow: hidden;
   position: relative;
   width: min(1440px, 100vw - 32px);
+  min-width: 1000px;
 }
 
 .bg-accent {
@@ -123,6 +124,7 @@ body {
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
 }
-.navbar {
+.navbar,
+.content {
   transition: all 0.5s ease-in-out;
 }

@@ -10,10 +10,15 @@ const SideBar = () => {
   const sideBar = language.sideBar;
   let [activeBar, setActiveBar] = React.useState(false);
   return (
-    <div className="max-w-[290px] w-[30vw] bg-secondary h-full flex flex-col relative">
-      <div className="flex justify-center items-center aspect-square bg-accent z-10 w-full h-[30vw] max-h-[290px]">
+    <div className="w-[20%] bg-secondary h-full flex flex-col relative z-10">
+      <div className="flex justify-center items-center aspect-square bg-accent z-10 w-full h-[360px] ">
         <div className="flex flex-col gap-4 items-center">
-          <Image src="/images/me.png" width={100} height={100} />
+          <Image
+            src="/images/me.png"
+            width={100}
+            height={100}
+            alt="profile picture"
+          />
           <h1 className="text-white font-semibold tracking-wide">
             Zied Mabrouk
           </h1>
@@ -27,7 +32,9 @@ const SideBar = () => {
           <div className="px-8 flex justify-between">
             <div className="flex flex-col gap-2">
               {sideBar.infos.map(({ label }, index) => (
-                <h6 className="text-xs">{label}</h6>
+                <h6 key={index} className="text-xs">
+                  {label}
+                </h6>
               ))}
             </div>
             <div className="flex flex-col gap-2">
@@ -73,7 +80,7 @@ const SideBar = () => {
         >
           <Image
             src="./img/icons/fb.svg"
-            alt=""
+            alt="fb icon"
             className="p-1"
             width={25}
             height={25}
@@ -87,7 +94,7 @@ const SideBar = () => {
         >
           <Image
             src="./img/icons/github.svg"
-            alt=""
+            alt="github icon"
             className="p-1"
             width={25}
             height={25}
@@ -101,7 +108,7 @@ const SideBar = () => {
         >
           <Image
             src="./img/icons/linkedin.svg"
-            alt=""
+            alt="linkedin icon"
             className="p-1"
             width={25}
             height={25}

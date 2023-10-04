@@ -2,7 +2,20 @@ export type section = {
   [key: string]: string | section | string[] | section[] | number;
 };
 const EN: section = {
-  navItems: ["Home", "History", "Contact"],
+  navItems: [
+    {
+      label: "Home",
+      path: "/",
+    },
+    {
+      label: "History",
+      path: "/history",
+    },
+    {
+      label: "Contact",
+      path: "/contact",
+    },
+  ],
   type: "EN",
   sideBar: {
     avatar: {

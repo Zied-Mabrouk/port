@@ -4,7 +4,6 @@ const ProgressBar = ({ label, percentage }) => {
   var [count, setCount] = React.useState(0);
   React.useEffect(() => {
     const inter = setInterval(() => {
-      console.log(count);
       setCount((count) => {
         if (percentage <= count) {
           clearInterval(inter);

@@ -1,29 +1,27 @@
 import { LanguageContext } from "@/pages/_app";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useContext } from "react";
 
 const NavBar = ({ active, setActive, swapLanguage }) => {
   const [language, setLanguage] = React.useContext(LanguageContext);
-  const handleClick = (val) => {
-    // setSelected(val);
-    // setActive(false);
-  };
-  const selected = "";
-  const width = active ? "230px" : "10vh";
 
   const navItems = language.navItems;
   const durations = navItems.map((item, key) => ({
     transitionDuration: `${key * 0.1 + 1}s`,
   }));
   const isEnglish = language.type === "EN";
+  const router = useRouter();
+  const path = router.pathname;
   return (
     <div
-      className={`navbar bg-secondary relative transition-[width] overflow-hidden`}
-      style={{ maxWidth: width, minWidth: width }}
+      className={`navbar bg-secondary relative transition-[width] overflow-hidden min-w-[18%] w-[18%] ${
+        active ? "-translate-x-32" : "translate-x-0"
+      }`}
     >
       <div
-        className={`navbar-header px-8 bg-accent w-full h-[10%] flex items-center ${
-          active ? "justify-left" : "justify-center"
+        className={`navbar-header px-[2vw] bg-accent w-full h-[10%] flex items-center ${
+          active ? "justify-left" : "justify-"
         }`}
       >
         {active ? (
@@ -62,16 +60,17 @@ const NavBar = ({ active, setActive, swapLanguage }) => {
             <Link
               style={durations[key]}
               onClick={() => handleClick(item)}
-              className={`transition-all text-grey-text text-sm delay-200 ${
+              key={key}
+              className={`transition-all text-grey-text border-b w-fit px-[1px] text-sm delay-200 ${
                 active ? "translate-x-0" : "translate-x-32"
-              }`}
-              href={item.toLowerCase()}
+              } ${path == item.path ? "border-main" : "border-transparent"}`}
+              href={item.path}
             >
-              {item}
+              {item.label}
             </Link>
           ))}
       </div>
-      <div className="navbar-languages h-[15%] flex flex-col items-center justify-center gap-2 text-grey-text text-xs bg-accent">
+      <div className="navbar-languages h-[15%] flex flex-col px-[2vw] justify-center gap-2 text-grey-text text-xs bg-accent">
         <div
           className={`rounded-full p-[1px] w-[25px] font-semibold cursor-pointer aspect-square flex justify-center items-center ${
             isEnglish ? "bg-dark" : "bg-main"
