@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import { Languages } from '@/utils/Languages';
+import { Languages, Section } from '@/utils/Languages';
 import type { AppProps } from 'next/app'
 import React from 'react';
 import SideBar from "../components/modules/SideBar/SideBar";
@@ -18,8 +18,13 @@ export default function App({ Component, pageProps }: AppProps) {
       setLanguage('EN')
     }
   }
+  const selectedLanguage: Section = Languages[language]
   return (
-    <LanguageContext.Provider value={[Languages[language], setLanguage]}>
+    <LanguageContext.Provider value={[selectedLanguage, setLanguage]}>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&amp;display=swap" rel="stylesheet"></link>
 
       <div className='container gap-[16px]'>
         <SideBar />

@@ -1,12 +1,16 @@
-import { useContext } from 'react';
+import React from 'react';
 import Button from '../components/cores/Button/Button'
-import { LanguageContext } from './_app';
 import Image from 'next/image';
+import { LanguageContext } from './_app';
+import { Section } from '@/utils/Languages';
+import ServiceCard from '@/components/cores/ServiceCard/ServiceCard';
 
 
 export default function Home() {
-  let [language] = useContext(LanguageContext);
-  // const home = language['home'];
+  const [language]: Section = React.useContext(LanguageContext);
+
+  const home = language.home;
+  console.log(home)
   return (
     <div className="w-full">
       <div className='relative w-full aspect-[2.2/1]'>
@@ -15,6 +19,12 @@ export default function Home() {
           <h1 className='text-white text-bg leading-[1.2] font-bold capitalize text-[50px]'>Discover my amazing Art Space !</h1>
           <Button title={'explore now'} />
         </div>
+      </div>
+      <h1 className='mt-12 text-2xl font-sans mb-8'>Services I offered in the past</h1>
+      <div className='grid grid-cols-3 gap-3'>
+        {home.services.cards.map((service, key) => (
+          <ServiceCard key={key} service={service}></ServiceCard>
+        ))}
       </div>
     </div>
   )

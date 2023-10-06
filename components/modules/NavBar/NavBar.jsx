@@ -72,16 +72,16 @@ const NavBar = ({ active, setActive, swapLanguage }) => {
       </div>
       <div className="navbar-languages h-[15%] flex flex-col px-[2vw] justify-center gap-2 text-grey-text text-xs bg-accent">
         <div
-          className={`rounded-full p-[1px] w-[25px] font-semibold cursor-pointer aspect-square flex justify-center items-center ${
-            isEnglish ? "bg-dark" : "bg-main"
+          className={`rounded-full p-[1px] w-[25px] cursor-pointer aspect-square flex justify-center items-center ${
+            isEnglish ? "bg-dark font-semibold" : "bg-main text-dark"
           }`}
           onClick={swapLanguage}
         >
           <span>FR</span>
         </div>
         <div
-          className={`rounded-full p-[1px] w-[25px] font-semibold cursor-pointer aspect-square flex justify-center items-center ${
-            !isEnglish ? "bg-dark" : "bg-main text-dark"
+          className={`rounded-full p-[1px] w-[25px] cursor-pointer aspect-square flex justify-center items-center ${
+            !isEnglish ? "bg-dark font-semibold" : "bg-main text-dark"
           }`}
           onClick={swapLanguage}
         >
