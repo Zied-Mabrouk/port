@@ -10,7 +10,7 @@ const SideBar = () => {
   const sideBar = language.sideBar;
   let [activeBar, setActiveBar] = React.useState(false);
   return (
-    <div className="w-[20%] bg-secondary h-full flex flex-col relative z-10">
+    <div className="w-[290px] bg-secondary h-full flex flex-col relative z-10">
       <div className="flex justify-center items-center aspect-square bg-accent z-10 w-full h-[360px] ">
         <div className="flex flex-col gap-4 items-center">
           <Image

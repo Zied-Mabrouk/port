@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { Key } from 'react';
 import Button from '../components/cores/Button/Button'
 import Image from 'next/image';
 import { LanguageContext } from './_app';
-import { Section } from '@/utils/Languages';
 import ServiceCard from '@/components/cores/ServiceCard/ServiceCard';
 
 
 export default function Home() {
-  const [language]: Section = React.useContext(LanguageContext);
+  const [language, setLanguage] = React.useContext(LanguageContext);
 
-  const home = language.home;
+  const { home } = language;
   console.log(home)
   return (
     <div className="w-full">
@@ -21,8 +20,8 @@ export default function Home() {
         </div>
       </div>
       <h1 className='mt-12 text-2xl font-sans mb-8'>Services I offered in the past</h1>
-      <div className='grid grid-cols-3 gap-3'>
-        {home.services.cards.map((service, key) => (
+      <div className='grid grid-cols-3 gap-5'>
+        {home.services.cards.map((service: any, key: Key) => (
           <ServiceCard key={key} service={service}></ServiceCard>
         ))}
       </div>

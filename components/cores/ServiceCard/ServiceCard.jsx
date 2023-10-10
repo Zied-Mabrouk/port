@@ -6,11 +6,11 @@ const ServiceCard = ({ service }) => {
     : "";
 
   return (
-    <div className="p-6 bg-accent service-card">
+    <div className="p-6 bg-secondary service-card pb-8">
       <h1 className="text-white w-full text-center mb-2 text-lg">
         {service.label}
       </h1>
-      <p className="text-grey-text text-sm">
+      <p className="text-grey-text text-xs text-justify">
         {parts
           ? parts.map((part, key) =>
               key === 1 ? (

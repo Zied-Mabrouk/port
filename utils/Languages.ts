@@ -1,7 +1,4 @@
-export type Section = {
-  [key: string]: string | Section | string[] | Section[] | number;
-};
-const EN: Section = {
+const EN: any = {
   navItems: [
     {
       label: "Home",
@@ -190,7 +187,7 @@ const EN: Section = {
   },
 };
 
-const FR: Section = {
+const FR: any = {
   navItems: [
     {
       label: "Home",

@@ -15,12 +15,12 @@ const NavBar = ({ active, setActive, swapLanguage }) => {
   const path = router.pathname;
   return (
     <div
-      className={`navbar bg-secondary relative transition-[width] overflow-hidden min-w-[18%] w-[18%] ${
-        active ? "-translate-x-32" : "translate-x-0"
+      className={`navbar absolute top-4 h-[calc(100vh-32px)] right-0 bg-secondary transition-[width] overflow-hidden min-w-[230px] ${
+        !active ? "translate-x-[150px]" : "translate-x-[16px]"
       }`}
     >
       <div
-        className={`navbar-header px-[2vw] bg-accent w-full h-[10%] flex items-center ${
+        className={`navbar-header px-[30px] bg-accent w-full h-[10%] flex items-center ${
           active ? "justify-left" : "justify-"
         }`}
       >
@@ -35,7 +35,7 @@ const NavBar = ({ active, setActive, swapLanguage }) => {
             strokeWidth="6"
             strokeLinecap="round"
             onClick={() => setActive(!active)}
-            className="fill-white cursor-pointer"
+            className="fill-white cursor-pointer min-w-[20px]"
           >
             <line x1="0" y1="0" x2="50" y2="50" />
             <line x1="50" y1="0" x2="0" y2="50" />
@@ -45,7 +45,7 @@ const NavBar = ({ active, setActive, swapLanguage }) => {
             viewBox="0 0 100 80"
             width="20"
             height="20"
-            className="fill-white cursor-pointer"
+            className="fill-white cursor-pointer min-w-[20px]"
             onClick={() => setActive(!active)}
           >
             <rect width="100" height="12"></rect>
@@ -59,7 +59,6 @@ const NavBar = ({ active, setActive, swapLanguage }) => {
           navItems.map((item, key) => (
             <Link
               style={durations[key]}
-              onClick={() => handleClick(item)}
               key={key}
               className={`transition-all text-grey-text border-b w-fit px-[1px] text-sm delay-200 ${
                 active ? "translate-x-0" : "translate-x-32"
@@ -70,7 +69,7 @@ const NavBar = ({ active, setActive, swapLanguage }) => {
             </Link>
           ))}
       </div>
-      <div className="navbar-languages h-[15%] flex flex-col px-[2vw] justify-center gap-2 text-grey-text text-xs bg-accent">
+      <div className="navbar-languages h-[15%] flex flex-col px-[30px] justify-center gap-2 text-grey-text text-xs bg-accent">
         <div
           className={`rounded-full p-[1px] w-[25px] cursor-pointer aspect-square flex justify-center items-center ${
             isEnglish ? "bg-dark font-semibold" : "bg-main text-dark"

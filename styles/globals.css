@@ -20,13 +20,17 @@ body {
 .container {
   display: flex;
   padding: 16px;
+  padding-right: 0;
   height: 100vh;
   margin-inline: auto;
   max-width: 1440px;
   overflow: hidden;
   position: relative;
   width: min(1440px, 100vw - 32px);
-  min-width: 1000px;
+  min-width: 1200px;
+}
+.content {
+  width: calc(min(1440px, 100vw - 32px) - (290px + 80px + 16px));
 }
 
 .bg-accent {
