@@ -9,7 +9,6 @@ export default function Home() {
   const [language, setLanguage] = React.useContext(LanguageContext);
 
   const { home } = language;
-  console.log(home)
   return (
     <div className="w-full">
       <div className='relative w-full aspect-[2.2/1]'>
