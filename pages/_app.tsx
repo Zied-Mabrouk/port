@@ -25,10 +25,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&amp;display=swap" rel="stylesheet"></link>
 
-      <div className='container'>
+      <div className='main-container'>
         <SideBar />
 
-        <div className={`content h-full px-8 overflow-y-auto relative delay-200 ease-in-out transition-all ${activeNavbar ? '-translate-x-32' : 'translate-x-0'
+        <div className={`content @container h-full px-8 overflow-y-auto relative delay-200 ease-in-out transition-all ${activeNavbar ? '-translate-x-32' : 'translate-x-0'
           }
         }`}>
           {

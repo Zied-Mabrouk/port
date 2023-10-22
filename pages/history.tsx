@@ -11,7 +11,7 @@ export default function History() {
     <div className="w-full">
 
       <h1 className='mt-2 text-2xl font-sans mb-8'>My journey</h1>
-      <div className='grid grid-cols-2 gap-5'>
+      <div className='grid grid-cols-1 gap-5 @[600px]:grid-cols-2'>
         {history.cards.map((card: any, key: Key) => (
           <EducationCard card={card} key={key} />
         ))}
