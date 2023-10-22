@@ -1,6 +1,4 @@
 import React, { Key } from 'react';
-import Button from '../components/cores/Button/Button'
-import Image from 'next/image';
 import { LanguageContext } from './_app';
 import EducationCard from '@/components/cores/EducationCard/EducationCard';
 
