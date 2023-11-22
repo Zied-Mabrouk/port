@@ -155,12 +155,15 @@ body {
   }
 }
 .education-card {
-  border: 4px outset rgba(255, 193, 7, 0.5);
+  border: 2px outset rgba(255, 193, 7, 0.5);
 }
 
-.education-card:hover > div > div img {
-  transform: translateY(calc(300px - 100%));
-  transition: transform 15s ease-in-out;
+.education-card:hover {
+  box-shadow: 5px 3px 10px rgb(0 0 0 / 0.2);
+  > div > div img {
+    transform: translateY(calc(300px - 100%));
+    transition: transform 15s ease-in-out;
+  }
 }
 
 .education-card::-webkit-scrollbar {

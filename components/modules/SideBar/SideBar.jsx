@@ -14,13 +14,13 @@ const SideBar = () => {
       <div className="flex justify-center items-center aspect-square bg-accent z-10 w-full h-[360px] ">
         <div className="flex flex-col gap-4 items-center">
           <Image
-            src="/images/me.png"
+            src="/img/me.png"
             width={100}
             height={100}
             alt="profile picture"
           />
           <h1 className="text-white font-semibold tracking-wide">
-            Zied Mabrouk
+            Amin Dhouib
           </h1>
           <p className="capitalize text-grey-text text-xs">
             full stack developer
@@ -38,10 +38,16 @@ const SideBar = () => {
               ))}
             </div>
             <div className="flex flex-col gap-2">
-              {sideBar.infos.map(({ content }, index) => (
-                <h6 key={index} className="text-xs text-grey-text text-right">
+              {sideBar.infos.map(({ content, link }, index) => (
+                <a
+                  href={link}
+                  key={index}
+                  className={`text-xs text-grey-text text-right ${
+                    link ? "underline-offset-2 underline" : ""
+                  }`}
+                >
                   {content}
-                </h6>
+                </a>
               ))}
             </div>
           </div>
@@ -52,23 +58,21 @@ const SideBar = () => {
             ))}
           </div>
           <Separator />
-          <div className="grid grid-cols-3 px-8 gap-2 relative">
-            {sideBar.hardSkills.map((skill, index) => (
-              <Skill key={index} {...skill} />
-            ))}
-            <div className="absolute right-0 vertical-text h-full flex justify-center">
-              hard skills
-            </div>
-          </div>
-          <Separator />
-          <div className="grid grid-cols-3 px-8 gap-2 relative">
-            {sideBar.otherSkills.map((skill, index) => (
-              <Skill key={index} {...skill} />
-            ))}
-            <div className="absolute right-0 vertical-text h-full flex justify-center">
-              soft skills
-            </div>
-          </div>
+          {sideBar.skillsTypes.map((skillsType, index) => (
+            <>
+              <div className="grid grid-cols-3 px-8 gap-2 relative">
+                <div className="absolute right-0 vertical-text h-full flex justify-center">
+                  {skillsType.label}
+                </div>
+                <>
+                  {skillsType.list.map((skill, index) => (
+                    <Skill key={index} skill={skill} />
+                  ))}
+                </>
+              </div>
+              <Separator />
+            </>
+          ))}
         </div>
       </div>
       <div className="flex h-12 min-h-[48px] relative px-8 justify-evenly items-center bg-accent">

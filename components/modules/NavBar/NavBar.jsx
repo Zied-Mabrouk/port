@@ -69,7 +69,7 @@ const NavBar = ({ active, setActive, swapLanguage }) => {
             </Link>
           ))}
       </div>
-      <div className="navbar-languages h-[15%] flex flex-col px-[30px] justify-center gap-2 text-grey-text text-xs bg-accent">
+      <div className="navbar-languages h-[15%] flex flex-col px-[30px] justify-evenly text-grey-text text-xs bg-accent">
         <div
           className={`rounded-full p-[1px] w-[25px] cursor-pointer aspect-square flex justify-center items-center ${
             isEnglish ? "bg-dark font-semibold" : "bg-main text-dark"
