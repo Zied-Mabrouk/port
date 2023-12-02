@@ -103,7 +103,8 @@ const EN: any = {
           "Flutter",
           "Git",
           "GraphQL",
-          "Jest / Mocha",
+          "Jest",
+          "Mocha",
           "Jira",
           "jQuery",
           "JUnit",
@@ -115,7 +116,7 @@ const EN: any = {
           "NextJS",
           "Node.js",
           "Photoshop",
-          "Pipelines/CD/CI",
+          "Pipelines CI CD",
           "PostgresSQL",
           "Prisma",
           "PyTest",
@@ -126,7 +127,8 @@ const EN: any = {
           "SOAP",
           "Visual Studio Code",
           "VueJS",
-          "XML / JSON",
+          "XML",
+          "JSON"
         ],
       },
       {
